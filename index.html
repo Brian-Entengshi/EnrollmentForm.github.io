@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+</head>
+
+<style>
+    table,td{
+        border-color: rgb(0, 26, 255);
+        border-collapse: collapse;
+        background-color: black;
+        -webkit-text-fill-color: cyan;
+    }
+</style>
+<style>
+    th{
+        background-color: darkorchid;
+        -webkit-text-fill-color: black;
+
+    }
+</style>
+<style>
+    button{
+        background-color: chartreuse;
+        text-decoration-color: blue;
+    }
+</style>
+<style>
+    legend{
+        background-color: black;
+        -webkit-text-fill-color: crimson;
+    }
+</style>
+<style>
+    h1,h3{
+        -webkit-text-fill-color: blue;
+    }
+</style>
+<style>
+     label,input{
+        -webkit-text-fill-color: cyan;
+    }
+</style>
+<style>
+    fieldset{
+        background-color:black;
+        border-color: darkblue;
+        
+    }
+</style>
+<style>
+    button{
+        -webkit-text-fill-color: crimson;
+    }
+</style>
+<body>
+    
+    <h1>Student Enrollment Form</h1>
+
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Fill in the form fields.</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Student Information</legend>
+
+            <!-- Full Name -->
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            <br><br>
+
+            <!-- Email Address -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100" required>   
+            <br><br>
+
+            <!-- Sex -->
+            <label>Sex:</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <!-- Course Options -->
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="BSIT">BS Information Technology</option>
+                <option value="BSSW">BS Social Work</option>
+                <option value="BSPA">BS Public Administration</option>
+                <option value="BSCS">BS Computer Science</option>
+            </select>
+            <br><br>
+
+            <!-- Interests -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="Illegal-Supplier" name="interests" value="Illegal Supplier">
+            <label for="Illegal-Supplier">Illegal Supplier</label><br>
+            <input type="checkbox" id="Illegal-Dealer" name="interests" value="Illegal Dealer">
+            <label for="Illegal-Dealer">Illegal Dealer</label><br>
+            <input type="checkbox" id="Shawty-Hunter" name="interests" value="Shawty Hunter">
+            <label for="Shawty-Hunter">Shawty Hunter</label><br>
+            <input type="checkbox" id="Relapse-Master" name="interests" value="Relapse Master">
+            <label for="Relapse-Master">Relapse Master</label><br><br>
+            <input type="checkbox" id="Loyal,-Loving-and-Caring" name="interests" value="Loyal, Loving and Caring">
+            <label for="Loyal,-Loving-and-Caring">Loyal, Loving and Caring</label><br><br>
+
+            <!-- Submit Button -->
+             
+            <button type="submit">Enroll Now</button>
+        </fieldset>
+    </form>
+
+    <h3>Student List</h3>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Brian Encina</td>
+                <td>Brian.Enteng@gmail.com</td>
+                <td>45</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Loyal, Loving and Caring</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Leslie Bocho</td>
+                <td>Lianne.Ramos@gmail.com</td>
+                <td>54</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Illegal Supplier</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kyla Cantos</td>
+                <td>Kyla.Mae@gmail.com</td>
+                <td>53</td>
+                <td>Female</td>
+                <td>BSIT</td>
+                <td>Illegal Dealer</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jade Redota</td>
+                <td>Jade.Carlo@gmail.com</td>
+                <td>55</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Shawty Hunter</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Charles Berches</td>
+                <td>charles.berches@gmail.com</td>
+                <td>50</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Relapse Master</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
